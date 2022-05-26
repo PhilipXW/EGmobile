@@ -1,0 +1,128 @@
+{
+  "S20 Ultra": {
+    "model": "S20 Ultra",
+    "screen": "$519",
+    "lcd": "$599",
+    "battery": "$199",
+    "weight": "18"
+  },
+  "S20 Plus": {
+    "model": "S20 Plus",
+    "screen": "$499",
+    "lcd": "$579",
+    "battery": "$199",
+    "weight": "17"
+  },
+  "S20 FE": {
+    "model": "S20 FE",
+    "screen": "$299",
+    "lcd": "$349",
+    "battery": "$199",
+    "weight": "16"
+  },
+  "S20": {
+    "model": "S20",
+    "screen": "$469",
+    "lcd": "$549",
+    "battery": "$199",
+    "weight": "15"
+  },
+  "S10 Plus": {
+    "model": "S10 Plus",
+    "screen": "$499",
+    "lcd": "$549",
+    "battery": "$129",
+    "weight": "14"
+  },
+  "S10e": {
+    "model": "S10e",
+    "screen": "$349",
+    "lcd": "$399",
+    "battery": "$129",
+    "weight": "13"
+  },
+  "S10 5G": {
+    "model": "S10 5G",
+    "screen": "$499",
+    "lcd": "$599",
+    "battery": "$129",
+    "weight": "12"
+  },
+  "S10": {
+    "model": "S10",
+    "screen": "$419",
+    "lcd": "$499",
+    "battery": "$129",
+    "weight": "11"
+  },
+  "S9 Plus": {
+    "model": "S9 Plus",
+    "screen": "$399",
+    "lcd": "$449",
+    "battery": "$119",
+    "weight": "10"
+  },
+  "S9": {
+    "model": "S9",
+    "screen": "$399",
+    "lcd": "$449",
+    "battery": "$119",
+    "weight": "9"
+  },
+  "S8 Plus": {
+    "model": "S8 Plus",
+    "screen": "$379",
+    "lcd": "$429",
+    "battery": "$119",
+    "weight": "8"
+  },
+  "S8": {
+    "model": "S8",
+    "screen": "$359",
+    "lcd": "$419",
+    "battery": "$119",
+    "weight": "7"
+  },
+  "S7 Edge": {
+    "model": "S7 Edge",
+    "screen": "N/A",
+    "lcd": "$349",
+    "battery": "$109",
+    "weight": "6"
+  },
+  "S7": {
+    "model": "S7",
+    "screen": "N/A",
+    "lcd": "$249",
+    "battery": "$109",
+    "weight": "5"
+  },
+  "S6 Edge": {
+    "model": "S6 Edge",
+    "screen": "N/A",
+    "lcd": "$249",
+    "battery": "$109",
+    "weight": "4"
+  },
+  "S6": {
+    "model": "S6",
+    "screen": "N/A",
+    "lcd": "$239",
+    "battery": "$109",
+    "weight": "3"
+  },
+  "S5": {
+    "model": "S5",
+    "screen": "N/A",
+    "lcd": "$179",
+    "battery": "$39",
+    "weight": "2"
+  },
+  "S4": {
+    "model": "S4",
+    "screen": "N/A",
+    "lcd": "$149",
+    "battery": "$39",
+    "weight": "1"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "J8 2018 J810": {
+    "model": "J8 2018 J810",
+    "screen": "$259",
+    "battery": "N/A",
+    "weight": "15"
+  },
+  "J7 Pro 2017 J730": {
+    "model": "J7 Pro 2017 J730",
+    "screen": "$269",
+    "battery": "$159",
+    "weight": "14"
+  },
+  "J7 2015 J700": {
+    "model": "J7 2015 J700",
+    "screen": "$269",
+    "battery": "N/A",
+    "weight": "13"
+  },
+  "J6 2018 J600": {
+    "model": "J6 2018 J600",
+    "screen": "$229",
+    "battery": "N/A",
+    "weight": "12"
+  },
+  "J5 Pro 2017 J530": {
+    "model": "J5 Pro 2017 J530",
+    "screen": "$249",
+    "battery": "$149",
+    "weight": "11"
+  },
+  "J5 J500": {
+    "model": "J5 2017 J530",
+    "screen": "$249",
+    "battery": "$119",
+    "weight": "10"
+  },
+  "J5 2016 J510": {
+    "model": "J5 2016 J510",
+    "screen": "$229",
+    "battery": "N/A",
+    "weight": "9"
+  },
+  "J4 2018 J400": {
+    "model": "J4 2018 J400",
+    "screen": "$549",
+    "battery": "$199",
+    "weight": "8"
+  },
+  "J3 2016 J300/320": {
+    "model": "J3 2016 J300 J320",
+    "screen": "$249",
+    "battery": "N/A",
+    "weight": "7"
+  },
+  "J3 Pro 2017 J330": {
+    "model": "J3 Pro 2017 J330",
+    "screen": "$179",
+    "battery": "N/A",
+    "weight": "6"
+  },
+  "J2 Pro 2018 J250": {
+    "model": "J2 Pro 2018 J250",
+    "screen": "$159",
+    "battery": "$119",
+    "weight": "5"
+  },
+  "J1 2016 J120": {
+    "model": "J1 2016 J120",
+    "screen": "$179",
+    "battery": "$119",
+    "weight": "4"
+  },
+  "J1 Ace 2016 J110": {
+    "model": "J1 Ace 2016 J110",
+    "screen": "$219",
+    "battery": "N/A",
+    "weight": "3"
+  },
+  "J100": {
+    "model": "J100",
+    "screen": "$99",
+    "battery": "N/A",
+    "weight": "2"
+  },
+  "J1 mini J105 J106": {
+    "model": "J1 mini J105/106",
+    "screen": "$69",
+    "battery": "N/A",
+    "weight": "1"
+  }
+}

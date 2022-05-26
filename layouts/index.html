@@ -1,0 +1,132 @@
+
+{{ define "main" }}
+
+<!-- Welcome -->
+<div class="container-fluid">
+  <div class="row bg-gradient">
+    <div class="col">
+      <h1 class="text-light text-center pt-5 letter-space">Online Shopping Coming Soon!</h1>
+      <h4 class="text-light text-center pb-5 pt-5">For phone and computer repair services, visit our shop or give us a call!</h4>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="display-4 text-center text-blue font-weight-bold my-3">
+        <button type="button" class="ml-3 btn bg-logo-blue"><a href="https://egrepairs.com.au" class="text-light"><strong>Learn more</strong></a></button>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- phone-->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-6 mx-auto text-color-light">
+      <img src="/images/illustrations/phone.svg" class="my-5" alt="Call us">
+      
+      <h5 class="mb-5"><a href="tel:{{  range .Site.Data.contact }}{{ .phone }}{{ end }}
+        " class="align-middle text-dark">{{  range .Site.Data.contact }}{{ .phone }}{{ end }}
+        <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-right align-middle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg></a></h5>
+      <h5 class="mb-5"><a href="tel:{{  range .Site.Data.contact }}{{ .mobile }}{{ end }}
+        " class="align-middle text-dark">{{  range .Site.Data.contact }}{{ .mobile }}{{ end }}
+        <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-right align-middle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg></a><span> Message 24 x 7</span></h5>
+      <h5 class="pb-3 text-dark" id="openinghours">Opening Hours</h5>
+          <table class="table price text-dark">
+            <thead>
+              <td></td>
+              <td></td>
+            </thead>
+            <tbody>
+              {{ range sort .Site.Data.hours "weight"}}
+              <tr>
+                <td class="text-right border-top-0">{{ .Day }}</td>
+                <td class="text-left border-top-0">{{ .Hours }}</td>
+              </tr>
+            {{ end }}		
+            </tbody>
+          </table>
+      <hr class="hr-gradient w-md-100 mx-auto mb-0">
+
+    </div>
+    
+  </div>
+</div>
+
+<!-- email -->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-lg-8 mx-auto text-color-light">
+      <img src="/images/illustrations/email.svg" class="my-5" alt="Email us">
+      <h5 class="Lead text-dark mb-5"><a href="mailto:info@egrepairs.com.au" class="lead text-dark">info@egrepairs.com.au<svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-right align-middle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg></a></h5>
+      <!-- <h5 class="pb-3 text-dark font-weight-bold mb-3">Contact 24 X 7</h5> -->
+      <h5 class="pb-3 text-dark mb-3" id="emailrequest">What to include in your request</h5>
+      <p class="text-dark px-3 text-left">To help make sure we are on the samge page and smooth the process, please include the following in your request:</p>
+      <ul class="text-dark text-left">
+        <li><strong>Your contact.</strong></li>
+        <li><strong>Device model.</strong> For example, iPhone 6, or Galaxy S9. If you cannot tell the model, try the following:
+          <br>
+          - If your device stills turns on, on iOS, you can go to <em>Settings - General - Model Name</em>; 
+          <br>
+          - On most Android systems, it's <em>Settings - About - Model Name</em>.
+          <br>
+          - If your device doesn't turn on, and you cannot tell the model, you can attach a photo of the device.</li>
+        <li><strong>Issue description.</strong> For example, device not turning on, or no charging.</li>
+      </ul>
+      <p class="text-dark px-3 text-left">We will try to get back to you within one hour.</p>
+
+      <hr class="hr-gradient w-100 mx-auto mb-0">
+
+    </div>
+  </div>
+</div>
+
+<!-- Getting here and google map -->
+<div class="container">
+    <div class="column">
+      <div class="col-lg-8 mx-auto text-center no-gutters my-5">
+        <ul class="tick-list">
+        <img src="/images/illustrations/placeholder.svg" class="mb-5" alt="Location">
+        <li><p class="text-dark mb-3 text-left">Shop G38, Burwood One Shopping Centre, 172-210 Burwood Highway, Burwood East, VIC 3151</p></li>
+        <li><p class="text-dark mb-3 text-left">Near the 24 hour Kmart and Coles</p></li>
+        <li><p class="text-dark mb-3 text-left">Free parking</p></li>
+      </ul>
+      </div>
+      </div>
+      <div class="col-lg-8 mx-auto text-center" id="burwoodscmap">
+        <!-- <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.2776900111753!2d145.14771951432803!3d-37.85379244410606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63f7714ce93c5%3A0x82b50bcd5b0fce3b!2sBurwood%20One%20Shopping%20Centre!5e0!3m2!1sen!2sau!4v1606172752851!5m2!1sen!2sau" width="100%" height="390px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.318331711151!2d145.14693555137984!3d-37.85284134395504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63f69825ebf17%3A0x642b8d2a60f41178!2sEG%20Repairs(Previously%20MKC%20Repairs)!5e0!3m2!1sen!2sau!4v1622267963144!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+ </div>
+
+ <!-- SC map -->
+ <div class="container">
+   <div class="row">
+
+     <h3 class="text-blue mx-auto my-5">Shopping Centre Map</h3>
+     <div class="co-lg-10 mx-auto text-center">
+      <img src="/images/Burwood-SC.PNG" class="img-fluid mb-5" height="350" alt="Burwood One Shopping Center Map">
+  </div>     
+   </div>
+ </div>
+
+ <!-- Shop exterior -->
+ <div class="container">
+  <div class="row">
+    <div class="co-lg-10 mx-auto text-center">
+     <img src="/images/exterior.png" class="img-fluid mb-5" alt="Shop exterior">
+ </div>     
+  </div>
+</div>
+
+{{ end }}

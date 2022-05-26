@@ -1,0 +1,37 @@
+{
+  "1": {
+    "Day": "Monday",
+    "Hours": "9AM - 6PM",
+    "weight": "1"
+  },
+  "2": {
+    "Day": "Tuesday",
+    "Hours": "9AM - 6PM",
+    "weight": "2"
+  },
+  "3": {
+    "Day": "Wednesday",
+    "Hours": "9AM - 6PM",
+    "weight": "3"
+  },
+  "4": {
+    "Day": "Thursday",
+    "Hours": "9AM - 6PM",
+    "weight": "4"
+  },
+  "5": {
+    "Day": "Friday",
+    "Hours": "9AM - 6PM",
+    "weight": "5"
+  },
+  "6": {
+    "Day": "Saturday",
+    "Hours": "9AM - 6PM",
+    "weight": "6"
+  },
+  "7": {
+    "Day": "Sunday",
+    "Hours": "10AM - 5PM",
+    "weight": "7"
+  }
+}

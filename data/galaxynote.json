@@ -1,0 +1,44 @@
+{
+  "Note 10 Plus": {
+    "model": "Note 10 Plus",
+    "screen": "$549",
+    "lcd": "$599",
+    "battery": "$149",
+    "weight": "6"
+  },
+  "Note 10": {
+    "model": "Note 10",
+    "screen": "$499",
+    "lcd": "$549",
+    "battery": "$149",
+    "weight": "5"
+  },
+  "Note 9": {
+    "model": "Note 9",
+    "screen": "$379",
+    "lcd": "$449",
+    "battery": "$129",
+    "weight": "4"
+  },
+  "Note 8": {
+    "model": "Note 8",
+    "screen": "$369",
+    "lcd": "$439",
+    "battery": "$119",
+    "weight": "3"
+  },
+  "Note 5": {
+    "model": "Note 5",
+    "screen": "$249",
+    "lcd": "$299",
+    "battery": "$119",
+    "weight": "2"
+  },
+  "Note 4": {
+    "model": "Note 4",
+    "screen": "$199",
+    "lcd": "$249",
+    "battery": "$49",
+    "weight": "1"
+  }
+}

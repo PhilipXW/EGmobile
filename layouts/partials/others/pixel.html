@@ -1,0 +1,36 @@
+<!-- iPad screen repair -->
+<div class="container">
+	<div class="row text-center">
+	  <div class="col-12">
+		<h3 class="my-3 text-blue" id="ipadScreen">Pixel Screen Repair Pricing</h3>
+	  </div>
+	  </div>
+  </div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 mx-auto">
+
+			<table class="table price mb-5">
+			  <thead>
+			    <tr style="border-bottom: 1px solid black;">
+			      <td class="text-right border-top-0">Pixel</td>
+						<td class="text-center border-top-0 align-middle">Screen</td>
+						<td class="text-center border-top-0 align-middle">Battery</td>
+            <td class="text-center border-top-0 align-middle">Back</td>
+					</tr>
+			  </thead>
+			  <tbody>
+          {{ range sort .Site.Data.pixel "weight" "desc" }}
+              <tr class="pl-0">
+                <td class="text-right border-top-0 border-right">{{ .model }}</th>
+                <td class="text-center border-top-0 border-right">{{ .screen }}</td>
+                <td class="text-center border-top-0 border-right">{{ .battery }}</td>
+                <td class="text-center border-top-0 border-right-0">{{ .back }}</td>
+              </tr>
+          {{ end }}
+			   </tbody>
+			</table>	
+			</div>
+	</div>
+</div>

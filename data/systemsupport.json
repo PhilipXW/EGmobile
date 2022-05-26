@@ -1,0 +1,21 @@
+[
+  {
+    "title": "System restore, app supprot, data recovery, and more."
+  },
+  {
+    "image": "images/illustrations/appleos.svg",
+    "alt": "iOS, iPad OS, Mac OS"
+  },
+  {
+    "image": "images/illustrations/android.svg",
+    "alt": "Android"
+  },
+  {
+    "image": "images/illustrations/windows.svg",
+    "alt": "Windows"
+  },
+  {
+    "image": "images/illustrations/linux.svg",
+    "alt": "Linux"
+  }
+]

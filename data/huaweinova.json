@@ -1,0 +1,74 @@
+{
+  "Nova 5i Pro": {
+    "model": "Nova 5i Pro",
+    "screen": "$199",
+    "battery": "$149",
+    "weight": "12"
+  },
+  "Nova 5 Pro": {
+    "model": "Nova 5 Pro",
+    "screen": "$349",
+    "battery": "$149",
+    "weight": "11"
+  },
+  "Nova 5T": {
+    "model": "Nova 5T",
+    "screen": "$299",
+    "battery": "$149",
+    "weight": "10"
+  },
+  "Nova 5": {
+    "model": "Nova 5",
+    "screen": "$199",
+    "battery": "$149",
+    "weight": "9"
+  },
+  "Nova 4e": {
+    "model": "Nova 4e",
+    "screen": "$169",
+    "battery": "$119",
+    "weight": "8"
+  },
+  "Nova 4": {
+    "model": "Nova 4",
+    "screen": "$199",
+    "battery": "$119",
+    "weight": "7"
+  },
+  "Nova 3e": {
+    "model": "Nova 3e",
+    "screen": "$169",
+    "battery": "$119",
+    "weight": "6"
+  },
+  "Nova 3i": {
+    "model": "Nova 3i",
+    "screen": "$159",
+    "battery": "$119",
+    "weight": "5"
+  },
+  "Nova 3": {
+    "model": "Nova 3",
+    "screen": "$159",
+    "battery": "$119",
+    "weight": "4"
+  },
+  "Nova 2 Lite": {
+    "model": "Nova 2 Lite",
+    "screen": "$149",
+    "battery": "$119",
+    "weight": "3"
+  },
+  "Nova 2i": {
+    "model": "Nova 2i",
+    "screen": "$149",
+    "battery": "$119",
+    "weight": "2"
+  },
+  "Nova 2": {
+    "model": "Nova 2",
+    "screen": "$149",
+    "battery": "$119",
+    "weight": "1"
+  }
+}

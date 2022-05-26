@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+:root {
+  --brand-color: #b00a0f;
+  --links-hover-color: #e5e5e5;
+  /* --bgd-color: #f4f4f4; */
+  --bgd-color: #2f303a;
+  --bg-light: #fff;
+  --text-color: #2d2d2d;
+  --text-light: #fff;
+  --logo-pink: #bc3a80;
+  --logo-blue: #1762a7;
+  --nav-bgd-color: #2f303a;
+  --dark-blue: #2e3e4f;
+  --price-green: #029221;
+  --dark-color: #292b2c; /* bootstrap 4 dark color */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  /* background-color: var(--bgd-color); */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /*max-width: 1000px;*/
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.text-red {
+  color: var(--brand-color);
+}
+
+.text-green {
+  color: var(--price-green);
+}
+
+.text-pink {
+  color: var(--logo-pink);
+}
+.text-blue {
+  color: var(--logo-blue);
+}
+
+.text-color-light {
+  color: var(--bgd-color);
+}
+
+.text-brand-color {
+  color: var(--brand-color);
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--logo-blue),
+    var(--logo-pink)
+  );
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+  /* background-color: var(--logo-blue); */
+}
+
+.bg-logo-blue {
+  background-color: var(--logo-blue);
+}
+
+.bg-brand-color {
+  background-color: var(--brand-color);
+}
+
+.bg-striped {
+  background-color: var(--bg-light);
+}
+
+.top-bar {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--brand-color);
+}
+
+.top-bar a {
+  color: var(--brand-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.nav-item a:hover {
+  font-weight: 500;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+/* responsiveness for navbar list item padding */
+
+@media only screen and (min-width: 990px) {
+  .navbar li {
+    padding: 0 0.8rem;
+  }
+}
+
+.jumbotron {
+  border-radius: 0;
+}
+
+.letter-space {
+  letter-spacing: 1px;
+}
+
+.hr-gradient {
+  height: 1px;
+  margin: 2rem 5rem;
+  background-image: linear-gradient(to right, #1762a7, #bc3a80);
+}
+
+.tick-list li {
+  list-style-image: url("../images/illustrations/check.svg");
+  line-height: 1.6;
+}
+
+.price-genuine li {
+  list-style-image: url("../images/illustrations/genuine.svg");
+  line-height: 1.6;
+}
+.price-non-genuine li {
+  list-style-image: url("../images/illustrations/non-genuine.svg");
+  line-height: 1.6;
+}
+
+.pricing-list li {
+  list-style: none;
+}
+
+.info-popover {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: var(--text-light);
+}
+
+.table.price > thead > tr > td {
+  border-top: none !important;
+  border-bottom: 1px solid black !important;
+}
+
+.table.price > tbody > tr > td {
+  border-right: 1px solid black !important;
+}
+
+.table.price > tbody > tr > td:last-child {
+  border-right: none !important;
+}
+
+.table.footer-table > tbody > tr > td {
+  border-right: none !important;
+}
+
+.google-map-embed {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.google-map-embed iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}

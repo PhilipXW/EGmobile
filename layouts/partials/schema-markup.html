@@ -1,0 +1,158 @@
+{{ if .IsHome -}}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "EG Repairs",
+    "image": "https://egrepairs.com.au/images/apple/iphone%20repairs.jpg",
+    "@id": "",
+    "url": "https://egrepairs.com.au/",
+    "telephone": "03 8839 2102",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "172-210 Burwood Hwy",
+      "addressLocality": "Burwood East",
+      "addressRegion": "VIC",
+      "postalCode": "3151",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -37.8529012,
+      "longitude": 145.1499598
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    } 
+  }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "EG Repairs",
+      "url": "https://egrepairs.com.au/",
+      "logo": "https://egrepairs.com.au/"
+    }
+    </script>
+  
+{{- else if in .Params.title "iPhone" -}}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/", 
+    "@type": "Product", 
+    "name": {{ .Params.Model }},
+    "image": "https://egrepairs.com.au/images/apple/iphone-screen-repair.jpg",
+    "description": "{{ .Params.Model }} Screen Replacement and Other Repair Services",
+    "brand": {
+      "@type": "Brand",
+      "name": {{ .Params.Model }}
+    },
+    "sku": "I0000",
+    "offers": {
+      "@type": "AggregateOffer",
+      "url": {{ .Permalink }},
+      "priceCurrency": "AUD",
+      "lowPrice": "59",
+      "highPrice": {{ trim .Params.Screen "$"}}
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "2",
+      "reviewCount": "2"
+    },
+    "review": [{
+      "@type": "Review",
+      "name": {{ .Params.Reviewer1 }},
+      "reviewBody": {{ .Params.ReviewBody1 }},
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2022-01-19",
+      "author": {"@type": "Person", "name": {{ .Params.Reviewer1 }},
+      "publisher": {"@type": "Organization", "name": "{{ .Params.ReviewOrg1 }}"}
+    },{
+      "@type": "Review",
+      "name": {{ .Params.Reviewer2 }},
+      "reviewBody": {{ .Params.ReviewBody2 }},
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2022-01-18",
+      "author": {"@type": "Person", "name": {{ .Params.Reviewer2 }},
+      "publisher": {"@type": "Organization", "name": {{ .Params.ReviewOrg2 }} }
+    }]
+  }
+  </script>
+
+  {{- else if in .Params.title "Computer" -}}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "Product", 
+      "name": "Computer Repair",
+      "image": "https://egrepairs.com.au/images/apple/computer-repair.jpg",
+      "description": "Get Computer Repairs in Burwood
+    MacBook Repair Pricing
+    PC Repair Pricing
+    Microsoft Surface Repair Pricing",
+      "brand": {
+        "@type": "Brand",
+        "name": "MacBook"
+      },
+      "sku": "MA000",
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://egrepairs.com.au/computer-repair/",
+        "priceCurrency": "AUD",
+        "lowPrice": "59",
+        "highPrice": "119"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "1",
+        "reviewCount": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "name": "Ray",
+        "reviewBody": "This website providing high quality computer repair services for PC or laptops. I got a wonderful experience.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2022-01-12",
+        "author": {"@type": "Person", "name": "Ray"},
+        "publisher": {"@type": "Organization", "name": "Tech Ltd"}
+      }
+    }
+    </script>
+
+{{- end }}

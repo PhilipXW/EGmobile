@@ -1,0 +1,44 @@
+{
+  "Nokia 8.1": {
+    "model": "Nokia 8.1",
+    "screen": "$219",
+    "battery": "$249",
+    "weight": "7"
+  },
+  "Nokia 8": {
+    "model": "Nokia 8",
+    "screen": "$199",
+    "battery": "$149",
+    "weight": "6"
+  },
+  "Nokia 7 Plus": {
+    "model": "Nokia 7 Plus",
+    "screen": "$299",
+    "battery": "$149",
+    "weight": "5"
+  },
+  "Nokia 7.1": {
+    "model": "Nokia 7.1",
+    "screen": "$189",
+    "battery": "$299",
+    "weight": "4"
+  },
+  "Nokia 6": {
+    "model": "Nokia 6",
+    "screen": "$179",
+    "battery": "$229",
+    "weight": "3"
+  },
+  "Nokia 5": {
+    "model": "Nokia 5",
+    "screen": "$169",
+    "battery": "$219",
+    "weight": "2"
+  },
+  "Nokia 3": {
+    "model": "Nokia 3",
+    "screen": "$159",
+    "battery": "$159",
+    "weight": "1"
+  }
+}
