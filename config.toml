@@ -1,6 +1,6 @@
-baseURL = "https://egrepairs.com.au"
+baseURL = "https://egmobile.com.au"
 languageCode = "en-us"
-title = "iPhone Repairs | Computer Repairs | EG Repairs"
+title = "EG Repairs in Melbourne"
 # googleAnalytics = "UA-191559141-1"
 
 
@@ -8,7 +8,7 @@ title = "iPhone Repairs | Computer Repairs | EG Repairs"
   # In most cases you will only want to use either one of these. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
   google_analytics_id = ""
   description = ""
-  gtm_id = "GTM-MSHCNRQ"
-  facebook = "egrepairsau"
-  twitter = "egrepairsau"
-  instagram = "egrepairsau"
+  gtm_id = ""
+  facebook = ""
+  twitter = ""
+  instagram = ""
