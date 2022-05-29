@@ -1,7 +1,6 @@
 baseURL = "https://egmobile.com.au"
 languageCode = "en-us"
-title = "EG Repairs in Melbourne"
-# googleAnalytics = "UA-191559141-1"
+title = "Tech Experts in Melbourne"
 
 
 [params]
