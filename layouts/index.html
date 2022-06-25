@@ -1,18 +1,24 @@
 
 {{ define "main" }}
 
-<!-- Welcome -->
-<div class="container-fluid">
-  <div class="row bg-gradient">
-    <div class="col">
-      <h1 class="text-light text-center py-5 letter-space">The Electronic Genius - Your One-Stop Mobile Phone Shop </h1>
-      <h4 class="text-light text-center pb-5">Shop G38, Burwood One Shopping Centre</h4>
-      <h4 class="text-light text-center pb-5">0416 377 133</h4>
+  <!-- Cover image -->
+  <div class="container-fluid px-0">
+    <div class="col-sm-12 col-lg-8 px-0 mx-auto text-center">
+      <img src="images/iphone.jpg" class="img-fluid" alt="iphone repairs">
     </div>
   </div>
-</div>
+ 
+  <!-- Welcome Section-->
+<div class="container-fluid">
+  <div class="column text-center">
+    <div class="col-12">
+     <!--  <img src="images/logo/Logo.png" class="img-fluid" alt="EG Logo"> -->
+      <h1 class="mt-5 text-blue mb-3 ">Your One-Stop Mobile Phone Shop</h1>
+        <h2 class="text-blue mb-5">The Electronic Genius</h2>
+    </div>
+    
 
-{{ partial "carousel.html" . }}
+
 
 <div class="container-fluid">
   <div class="row">
@@ -95,36 +101,6 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="co-lg-10 mx-auto text-center">
-     <img src="images/Carousel/Burwood-SC.PNG" class="img-fluid mb-5" wdith="400" alt="Shopping Centre Outside">
- </div>     
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="co-lg-10 mx-auto text-center">
-     <img src="images/Carousel/outside.png" class="img-fluid mb-5" wdith="400" alt="Shopping Centre Outside">
- </div>     
-  </div>
-</div>
 
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="co-lg-10 mx-auto text-center">
-     <img src="images/Carousel/way1.png" class="img-fluid mb-5" wdith="400" alt="Shopping Centre 1">
- </div>     
-  </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="co-lg-10 mx-auto text-center">
-     <img src="images/Carousel/way2.png" class="img-fluid mb-5" wdith="400" alt="Shopping Centre 2">
- </div>     
-  </div>
-</div>
 
 {{ end }}

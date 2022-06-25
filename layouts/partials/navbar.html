@@ -24,8 +24,34 @@
        </svg>
        </a>
     </div>
-   
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBurger">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navBurger">
+     <ul class="navbar-nav letter-space mx-auto">
+       <!-- {{ range .Site.Menus.nav}}
+          <li class="nav-item"><a class="text-light nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
+       {{ end }} -->
+       <li class="nav-item">
+        <a href="/" class="text-light nav-link">Home</a>
+      </li>
+     <!--<li class="nav-item dropdown">
+        <a href="/mobile-phone-accessories" class="nav-link text-light">Accessories</a>
+  
+    </li>-->
+
+
  
+
+<li class="text-white nav-item">
+  <a href="/iphone-trade-in" class="nav-link text-light">iPhone Trade In</a>
+</li>
+
+    <li class="text-white nav-item">
+      <a href="/contact-eg-repairs" class="nav-link text-light">Contact Us</a>
+    </li>
+     </ul>
+   </div>
      
  </div>
 </nav>
