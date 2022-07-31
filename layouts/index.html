@@ -103,7 +103,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col">
-      <h2 class=" text-center py-5 letter-space">Phone Repairs </h2>
+      <h2 class=" text-center py-5 letter-space">iPhone New Screen/Battery Service</h2>
     </div>
   </div>
 </div>
@@ -127,20 +127,12 @@
 </div> 
 </div>
 
-<div class="container my-5">
-  <div class="row">
-    <div class="col text-center">
-      <a href="https://egrepairs.com.au/iphone-repair" class="btn btn-lg bg-logo-blue"><strong class="text-light">Learn more</strong></a>
-    </div>
-    </div>
-  </div>
-      </div>
-  </div>
+
 
 <div class="container-fluid">
   <div class="row">
     <div class="col">
-      <h2 class=" text-center pt-5 letter-space">iPad Reapirs</h2>
+      <h2 class=" text-center pt-5 letter-space">iPad New Screen/Battery Service</h2>
     </div>
   </div>
 </div>
@@ -164,15 +156,7 @@
 </div>
 
 
-<div class="container my-5">
-  <div class="row">
-    <div class="col text-center">
-      <a href="https://egrepairs.com.au/ipad-repair" class="btn btn-lg bg-logo-blue"><strong class="text-light">Learn more</strong></a>
-    </div>
-  </div>
-</div>
-
-
+<!--
 <div class="container-fluid">
   <div class="row">
     <div class="col">
@@ -181,20 +165,12 @@
   </div>
 </div>
 
-<div class="container my-5">
-  <div class="row">
-    <div class="col text-center">
-      <a href="https://egrepairs.com.au/computer-repair" class="btn btn-lg bg-logo-blue"><strong class="text-light">Learn more</strong></a>
-    </div>
-    </div>
-  </div>
-  </div>
 </div>
-
+-->
 <div class="container">
   <div class="row">
     <div class="col">
-      <div class="display-4 text-center text-blue font-weight-bold my-3">TRY OUR SERVICE
+      <div class="display-4 text-center text-blue font-weight-bold my-5">TRY OUR SERVICE
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short align-middle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
         </svg>
@@ -202,7 +178,122 @@
     </div>
     </div>
   </div>
+
+
+<!--Contact Us-->
+
+<!-- phone-->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-6 mx-auto text-color-light">
+      <img src="/images/illustrations/phone.svg" class="my-5" alt="Call us">
+      
+      
+      <h5><a href="tel:{{  range .Site.Data.contact }}{{ .mobile }}{{ end }}
+        " class="align-middle text-dark">{{  range .Site.Data.contact }}{{ .mobile }}{{ end }}</a></h5>
+      <img src="/images/illustrations/email.svg" class="my-5" alt="Email us">
+      <h5 class="Lead text-dark mb-5"><a href="mailto:info@egrepairs.com.au" class="lead text-dark">info@egrepairs.com.au<svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-right align-middle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg></a></h5>
+      <h5 class="pb-3 text-dark" id="openinghours">Opening Hours</h5>
+          <table class="table price text-dark">
+            <thead>
+              <td></td>
+              <td></td>
+            </thead>
+            <tbody>
+              {{ range sort .Site.Data.hours "weight"}}
+              <tr>
+                <td class="text-right border-top-0">{{ .Day }}</td>
+                <td class="text-left border-top-0">{{ .Hours }}</td>
+              </tr>
+            {{ end }}		
+            </tbody>
+          </table>
+
+    </div>
+    
+  </div>
 </div>
 
+<!-- email -->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-lg-8 mx-auto text-color-light">
+   
+      
+
+      <hr class="hr-gradient w-100 mx-auto mb-0">
+
+    </div>
+  </div>
+</div>
+
+<!-- Getting here and google map -->
+<div class="container">
+    <div class="column">
+      <div class="col-lg-8 mx-auto text-center no-gutters my-5">
+        <ul class="tick-list">
+        <img src="/images/illustrations/placeholder.svg"  alt="Location">
+        <h3 class="mx-auto my-5">Getting Here</h3>
+        <li><p class="text-dark mb-3 text-left">Shop G38, Burwood One Shopping Centre, 172-210 Burwood Highway, Burwood East, VIC 3151</p></li>
+        <li><p class="text-dark mb-3 text-left">Near the 24 hour Kmart and Coles</p></li>
+        <li><p class="text-dark mb-3 text-left">Free parking</p></li>
+      </ul>
+      </div>
+      </div>
+    
+    </div>
+ </div>
+
+ <div class="container-fluid">
+  <div class="row">
+    <div class="co-lg-10 mx-auto text-center">
+ <div id="burwoodscmap">
+  <!-- <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.2776900111753!2d145.14771951432803!3d-37.85379244410606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63f7714ce93c5%3A0x82b50bcd5b0fce3b!2sBurwood%20One%20Shopping%20Centre!5e0!3m2!1sen!2sau!4v1606172752851!5m2!1sen!2sau" width="1000" height="750" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.318331711151!2d145.14693555137984!3d-37.85284134395504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63f69825ebf17%3A0x642b8d2a60f41178!2sEG%20Repairs(Previously%20MKC%20Repairs)!5e0!3m2!1sen!2sau!4v1622267963144!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>     
+</div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="co-lg-10 mx-auto text-center">
+       <img src="/images/contact/Burwood-SC.PNG" class="img-fluid mb-5" wdith="400" alt="Shopping Centre Map">
+   </div>     
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="co-lg-10 mx-auto text-center">
+       <img src="/images/contact/outside.png" class="img-fluid mb-5" wdith="400" alt="Shopping Centre Carpark">
+   </div>     
+    </div>
+  </div>
+  
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="co-lg-10 mx-auto text-center">
+       <img src="/images/contact/way1.png" class="img-fluid mb-5" wdith="400" alt="Shopping Centre 1">
+   </div>     
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="co-lg-10 mx-auto text-center">
+       <img src="/images/contact/way2.png" class="img-fluid mb-5" wdith="400" alt="Shopping Centre 2">
+   </div>     
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="co-lg-10 mx-auto text-center">
+       <img src="/images/contact/exterior.jpg" class="img-fluid mb-5" wdith="400" alt="Shop Exterior">
+   </div>     
+    </div>
+  </div>
 
 {{ end }}
